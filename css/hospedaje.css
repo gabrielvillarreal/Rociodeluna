@@ -1,0 +1,55 @@
+/* CSS DE LA BARRA DE NAVEGACION PARA QUE APAREZCA LUEGO DEL INTRO*/
+
+#menu-area {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    background: #0a2a43;
+    position: relative;
+    width: 100%;
+    top: 200;
+    box-shadow: 2px 2px 5px #000;
+    opacity: 1;
+}
+
+#menu-area .logo img {
+    height: 65px;
+    padding-top: 10px;
+}
+
+#menu-area ul {
+    width: 500px;
+    justify-content: space-around;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+#menu-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+
+#menu-area ul li a:hover {
+    color: #ffA;
+}
+
+#drop {
+    background: #0a2a43;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background: #000;
+    color: #fff;
+}
+
+/*FIN DEL AREA DE NAVEGACION*/

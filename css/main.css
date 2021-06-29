@@ -1,0 +1,224 @@
+.navbar{
+    box-shadow: 2px 2px 5px #000;
+    opacity: 1;
+}
+
+.navbar .nav-item .nav-link{
+    color: #fff;
+}
+
+
+.main-header {
+    position: relative;
+    background: url("../img/Mina-Clavero.jpg");
+    background-size: cover;
+    min-height: 500px;
+}
+#imgbk{
+    width: 150px;
+
+}
+.background-overlay{
+    position: absolute;
+    background:rgba(211, 84, 0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    background: rgb(77, 77, 77);
+}
+
+#contactoimg p a img{
+    width: 30px;
+    height: 30px;
+}
+/* animacion de botones sociales del footer */
+.btnsocial{
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.btnsociala{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.btnsociala i{
+    line-height: 70px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btnsociala:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.btnsociala::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btnsociala:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }50%{
+        left: 10%;
+        top: -30%;
+
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+/* fin de animaciones sociales */
+
+/*parallax simple de intro*/
+#parallax
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#parallax:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 1;
+}
+#parallax:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 3;
+    mix-blend-mode: color;
+}
+#parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+@media all and(max-width: 411px){
+    html{
+        font-size: 10px;
+    }
+}
+
+#text
+{
+    position: relative;
+    color: #fff;
+    font-size: 13rem !important;
+    z-index: 1;
+}
+#road{
+    z-index: 2;
+}
+/* fin parallax simple de intro*/
+
+/* CSS DE LA BARRA DE NAVEGACION PARA QUE APAREZCA LUEGO DEL INTRO*/
+#menu-area{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: fixed;
+    width: 100%;
+    top: 0.1%;
+    transition: background 0.5s;
+    z-index: 1;
+
+}
+#menu-area .logo img{
+    height: 80%;
+    transition: height 0.5s;
+    padding-top: 10px;
+}
+#menu-area ul{
+    width: 500px;
+    justify-content: space-around;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+#menu-area ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: none;
+
+}
+#menu-area ul li a:hover{
+    color: #ffA;
+}
+#drop{
+    background: #0a2a43;
+    color: white;
+}
+.dropdown-item:hover{
+    background: #000;
+    color: #fff;
+}
+#menu-area.cus-nav{
+    background: #0a2a43;
+    z-index: 999;
+    box-shadow: 2px 2px 5px #000;
+    opacity: 1;
+}
+#menu-area.cus-nav a{
+    color: #fff;
+}
+#menu-area.cus-nav ul li a{
+    display: flex;
+}
+#menu-area.cus-nav .logo img{
+    height: 65px;
+}
+/*FIN DEL AREA DE NAVEGACION*/

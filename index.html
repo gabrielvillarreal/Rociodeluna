@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Rocio de Luna</title>
+    <link rel="icon" type="image/png" href="/Rociodeluna/img/logo.ico"/>
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Rociodeluna/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <!-- Compiled and minified CSS MATERIALIZE-->
+    <link rel="stylesheet" href="/Rociodeluna/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript MATERIALIZE -->
+    <script src="/Rociodeluna/js/materialize.js"></script>
+
+
+    <!-- script de swipe para hacer un slide de fotos -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<!-- Demo styles -->
+  <style>
+
+
+
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION QUE SE OCULTA PARA EL INTRO--->
+    <div id="menu-area">
+        <div class="logo">
+            <a href="/">
+                <img src="/Rociodeluna/img/logo.png" alt="">
+            </a>
+        </div>
+        <ul>
+            <li class="nav-item"><a href="/">Inicio</a></li>
+            <li ><a href="hospedaje">Casa</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Departamentos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop">
+                  <a class="dropdown-item" href="#hospedajes">Dpto Nº1</a>
+                  <a class="dropdown-item" href="#hospedajes">Dpto Nº2</a>
+                  <a class="dropdown-item" href="#hospedajes">Dpto Nº3</a>
+                  <a class="dropdown-item" href="#hospedajes">Dpto Nº4</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#contacto"> Contacto </a></li>
+
+        </ul>
+    </div>
+
+ <!-- Parallax simple, donde ubico las imagenes, el script esta al final de la pagina y el css. -->
+    <div id="parallax" class="toggle-btn">
+        <img src="/Rociodeluna/img/bg_sky.jpg" id="bg">
+        <img src="/Rociodeluna/img/bg_moon.png" id="moon">
+        <img src="/Rociodeluna/img/bg_mountain.png" id="mountain">
+        <img src="/Rociodeluna/img/bg_road.png" id="road">
+        <h2 id="text"><b>Rocio de Luna</b></h2>
+
+
+    </div>
+
+
+
+
+<!-- CABECERA -->
+<header class="main-header">
+
+    <div class="background-overlay text-white py-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center justify-content-center align-self-center">
+                    <label><h1 class="white-text" id="bienvenidos"><b>BIENVENIDOS</b></h1></label>
+
+                </div>
+            </div>
+            <div class="col-md-12 text-center justify-content-center align-self-center">
+
+                <p>Te invitamos a conocer nuestro establecimiento, pensado para que disfruten de los paisajes, rios y sierras que brinda esta hermosa locadidad cordobesa. Queremos brindarte una atención cálida y cuidadosa para que tu experiencia sea un recuerdo inolvidable..</p>
+
+                <p>Mina Clavero es una ciudad con una ubicación privilegiada, donde ud puede disfrutar de las bellezas de las localidades aledañas, a solo pocos kilómetros. </p>
+                <p>El barrio es un lugar tranquilo y seguro, cerca del Balneario Los Cedros, en el cual corre el agua cálida del rio Panaholma, y a 5 cuadras de un supermercado. Al frente hay una despensa y a media cuadra esta una de las radios mas populares del valle de Traslasierra</p>
+                <p>A continuación le ofrecemos nuestras viviendas.</p>
+                <h4 >LOS ESPERAMOS!!!</h4>
+                <div class="col-md-12 right-align" id="hospedajes" >
+                    <a href="https://www.booking.com/hotel/ar/rocio-de-luna.es-ar.html">
+                        <img class="" id="imgbk" src="/Rociodeluna/img/social_media1.jpg" alt="Booking Guest Award">
+                    </a>
+                    <a href="https://www.booking.com/hotel/ar/rocio-de-luna.es-ar.html">
+                        <img class="" id="imgbk" src="/Rociodeluna/img/social_media.png" alt="Booking Guest Award">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header >
+<section>
+<div class="col-md-12 text-center">
+    <label><h3><b>NUESTROS HOSPEDAJES</b></h3></label>
+</div>
+<div class="divider"></div>
+
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row valign-wrapper ">
+            <div class="col s4 m2">
+              <div class="card hoverable ">
+                <div class="card-image">
+                  <img src="/Rociodeluna/img/bcasa.jpg">
+                  <span class="card-title"><b>La Casa</b></span>
+                    <a class="btn-floating modal-trigger pulse halfway-fab waves-effect waves-light pink" href="#modalcasa" ><i class="fas fa-plus"></i></a>
+                </div>
+                <!-- Modal casa -->
+                  <div id="modalcasa" class="modal">
+
+                    <!-- El CSS del slide swiper para ver las fotos de los dptos--. modifique un poco el css para lograr hacer un efecto espejo en las imagenes del slide con after y before-->
+       <!--{{-- <style>
+       .swiper-container {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 200px;
+        }
+        .swiper-slide {
+          width: 300px;
+          height: 300px;
+          position: relative;
+          background-position: bottom;
+          background-size: cover;
+          box-shadow: 0px 50px 70px rgba(0,0,0,0.3),
+                      0px 10px 10px rgba(0,0,0,0.1);
+        }
+        .swiper-slide::after{
+            content: "";
+            background-image: inherit;
+            width: inherit;
+            height: 40%;
+            position: absolute;
+            bottom: -41%;
+            transform: scaleY(-1);
+            background-position: bottom;
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .swiper-slide::before{
+            content: "";
+            width: inherit;
+            height: 42%;
+            position: absolute;
+            bottom: -42%;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.3), white);
+            z-index: 1;
+        }
+      </style>  --}}-->
+
+
+
+                    <div class="modal-content">
+                      <div class="section">
+                      <div class="col s12 text-center">
+                        <h4 center><b>Casa para 10 personas</b></h4>
+                      </div>
+                      <div class="col s12 text-center">
+                        <p>
+                          La casa cuenta con capacidad para 10 personas, con los siguientes servicios:<br>
+
+                          2 habitaciones <br>
+
+                          Cocina - comedor
+
+                          TV. por cable
+
+                          Hall central
+
+                          Patio exterior de césped
+
+                          Quincho con asador
+
+                          Cochera
+
+                          Sillones en el living-comedor
+
+                          Ventilador de pie y una habitación con ventilador de techo
+                          EL LIVING
+
+                          Living con sillones y hogar amplio para comodidad de los visitantes.
+                          LAS HABITACIONES
+
+                          Cama matrimonial con cuchetas, con muebles y mesita de luz amplios, con ventanas grandes.
+
+                          COCINA - COMEDOR
+
+                          Cocina completa provista con lo necesario para su uso. Y mesa comedor con TV por cable
+                          EL BAÑO
+
+                          Baño con pileta, inodoro, videt y ducha con botiquin.
+
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="container" id="swipecomentarios">
+  <div class="swiper-container center " >
+    <label><h3 ><b>COMENTARIOS DE NUESTROS CLIENTES</b></h3></label>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <blockquote>
+          <h4>LA ATENCION EXCEPCIONAL</h4>
+          <p>Debido a unos inconvenientes semanas antes de nuestras vacaciones, se nos iba a hacer imposible ir en las fechas reservadas con antelación, lo hablamos con el dueño y él nos buscó una fecha para mover nuestra reserva sin costo alguno. Me parece un gesto honrado de su parte, ya que sino, perderíamos la reserva que habiamos realizado.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Matías Taborda</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>EL PARQUE ES GENIAL!</h4>
+          <p>Nos hospedamos en un departamento, con nuestra mascota, una caniche, los dueños no tuvieron problema en que ella se quede dentro del departamento a dormir con nosotros, ya que a ella la tratamos como parte de la familia!. Ella andaba contenta en el parque que teniamos!! Gracias por todo Rocio de Luna!</p>
+          <h6><i class="fas fa-pen-fancy"></i> Julieta Sanguedolce</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>¡PERFECTO PARA UNA LUNA DE MIEL!</h4>
+          <p>Muy lindo el departamento, solo éramos dos y realmente conseguimos un buen precio a pesar de ir en Enero, muy cordiales los dueños. disfrutamos mucho de la estadía</p>
+          <h6><i class="fas fa-pen-fancy"></i> Gonzalo & Marcela Lozada</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>EXCELENTE PRECIO Y UBICACIÓN</h4>
+          <p>Super recomendable... Excelente, precios accesibles, muy buena ubicación.... Ambiente familiar. tranquilo. Está cerca de todo, nos sentimos muy cómodos.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Enrique Sosa</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>UNA CASA FUERA DE TU CASA</h4>
+          <p>Que lindo Mina Clavero!, fuimos hasta Cura Brochero a cumplir una promesa y luego de tantos años, vi como creció el pueblo. En cuanto a la casa, es muy cómoda, amplia, con todo lo que necesite para sentirme como en casa..</p>
+          <h6><i class="fas fa-pen-fancy"></i> Daniela Martinez</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4> NO PUEDO IMAGINAR UN MEJOR LUGAR DE VACACIONES</h4>
+          <p>Una estadia maravillosa, nos queda cerca del centro y del super, a pesar de no tener vehiculo. La atencion fue muy buena. El año que viene volveremos.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Marta Gravier</h6>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next pink-text"></div>
+    <div class="swiper-button-prev pink-text"></div>
+  </div>
+</div>
+                      <!-- carousel con imagenes de portada de los dptos y su descripcion >-->
+
+
+
+
+
+
+
+
+                  </div>
+
+
+                <div class="card-content">
+                  <p>Amplia casa para hospedar a 10 personas, ubicada al frente del complejo, brinda comodidad a los huéspedes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4 m2">
+              <div class="card hoverable ">
+                <div class="card-image">
+                  <img src="/Rociodeluna/img/bdpto1.jpg">
+                  <span class="card-title"><b>Dpto Nº 1</b></span>
+                  <a class="btn-floating pulse halfway-fab waves-effect waves-light pink"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="card-content">
+                  <p>Departamento para hospedar a 2 personas, cuenta con asador, cocina-comedor, habitación y baño</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4 m2">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="/Rociodeluna/img/bdpto2.jpg">
+                  <span class="card-title"><b>Dpto Nº 2</b></span>
+                  <a class="btn-floating pulse halfway-fab waves-effect waves-light pink"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="card-content">
+                  <p>Departamento para hospedar a 4 personas, cuenta con asador, cocina-comedor, habitación y baño</p>
+                </div>
+              </div>
+            </div>
+         </div>
+
+         <div class="row">
+          <div class="col s4 m2">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="/Rociodeluna/img/bdpto3.jpg">
+                  <span class="card-title"><b>Dpto Nº 3</b></span>
+                  <a class="btn-floating pulse halfway-fab waves-effect waves-light pink"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="card-content">
+                  <p>Departamento para hospedar a 4 personas, cuenta con asador, cocina-comedor, habitación y baño</p>
+                </div>
+              </div>
+            </div>
+
+
+          <div class="col s4 m2">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="/Rociodeluna/img/bdpto4.jpg">
+                  <span class="card-title"><b>Dpto Nº 4</b></span>
+                  <a class="btn-floating pulse halfway-fab waves-effect waves-light pink"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="card-content">
+                  <p>Departamento para hospedar a 6 personas, cuenta con asador, hall, cocina, habitación y baño</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+</section>
+
+<div class="divider" id="comentarios"></div>
+<!-- Swiper: le agrego el id al container para que funcione el script a esto solamente -->
+<div class="container" id="swipecomentarios">
+  <div class="swiper-container center " >
+    <label><h3 ><b>COMENTARIOS DE NUESTROS CLIENTES</b></h3></label>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <blockquote>
+          <h4>LA ATENCION EXCEPCIONAL</h4>
+          <p>Debido a unos inconvenientes semanas antes de nuestras vacaciones, se nos iba a hacer imposible ir en las fechas reservadas con antelación, lo hablamos con el dueño y él nos buscó una fecha para mover nuestra reserva sin costo alguno. Me parece un gesto honrado de su parte, ya que sino, perderíamos la reserva que habiamos realizado.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Matías Taborda</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>EL PARQUE ES GENIAL!</h4>
+          <p>Nos hospedamos en un departamento, con nuestra mascota, una caniche, los dueños no tuvieron problema en que ella se quede dentro del departamento a dormir con nosotros, ya que a ella la tratamos como parte de la familia!. Ella andaba contenta en el parque que teniamos!! Gracias por todo Rocio de Luna!</p>
+          <h6><i class="fas fa-pen-fancy"></i> Julieta Sanguedolce</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>¡PERFECTO PARA UNA LUNA DE MIEL!</h4>
+          <p>Muy lindo el departamento, solo éramos dos y realmente conseguimos un buen precio a pesar de ir en Enero, muy cordiales los dueños. disfrutamos mucho de la estadía</p>
+          <h6><i class="fas fa-pen-fancy"></i> Gonzalo & Marcela Lozada</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>EXCELENTE PRECIO Y UBICACIÓN</h4>
+          <p>Super recomendable... Excelente, precios accesibles, muy buena ubicación.... Ambiente familiar. tranquilo. Está cerca de todo, nos sentimos muy cómodos.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Enrique Sosa</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4>UNA CASA FUERA DE TU CASA</h4>
+          <p>Que lindo Mina Clavero!, fuimos hasta Cura Brochero a cumplir una promesa y luego de tantos años, vi como creció el pueblo. En cuanto a la casa, es muy cómoda, amplia, con todo lo que necesite para sentirme como en casa..</p>
+          <h6><i class="fas fa-pen-fancy"></i> Daniela Martinez</h6>
+        </blockquote>
+      </div>
+      <div class="swiper-slide">
+        <blockquote>
+          <h4> NO PUEDO IMAGINAR UN MEJOR LUGAR DE VACACIONES</h4>
+          <p>Una estadia maravillosa, nos queda cerca del centro y del super, a pesar de no tener vehiculo. La atencion fue muy buena. El año que viene volveremos.</p>
+          <h6><i class="fas fa-pen-fancy"></i> Marta Gravier</h6>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next pink-text"></div>
+    <div class="swiper-button-prev pink-text"></div>
+  </div>
+</div>
+
+<div class="divider" id="indicaciones"></div>
+
+<!-- Google maps -->
+<div class="container text-center">
+  <div class="row">
+    <div class="col s12 text-center">
+      <label ><h3><b>INDICACIONES</b></h3></label>
+    </div>
+    <div class="col-md-12 py-5 text-center ">
+            <iframe text-align="center" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1199.947618714477!2d-65.00287741193304!3d-31.716867633428205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sua!4v1565731982701!5m2!1ses!2sua" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col s12 text-center">
+    <label>Dirección: Edison 532 - Mina Clavero</label>
+    <div class="col s12 text-center">
+    <label>Latitud: -31.716868 - Longitud: -65.002877</label>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="divider" id="contacto"></div>
+<!-- formulario de contacto -->
+<section >
+  <div class="container" >
+    <div class="card">
+     <div class="card-content">
+         <div class="row">
+          <form class="col s12">
+              <div class="center">
+                <label class="black-text">
+                  <h3><b>CONTACTO</b></h3>
+                </label>
+              </div>
+              <div class="center">
+                <label class="dark-text">
+                  <h6>Para mas información o reserva:</h6>
+                </label>
+              </div>
+            <div class="row">
+              <div class="input-field col s4">
+                 <i class="fas fa-user prefix"></i>
+                <input id="first_name" type="text" class="validate" required="true">
+                <label for="first_name">NOMBRE Y APELLIDO</label>
+                <span class="helper-text" data-error="Ingrese su nombre" data-success=""></span>
+              </div>
+              <div class="input-field col s4">
+                <i class="fas fa-phone prefix"></i>
+                <input id="phone" type="text" class="validate">
+                <label for="phone">TELÉFONO</label>
+              </div>
+              <div class="input-field col s4">
+                       <i class="fas fa-home prefix"></i>
+                      <select id="selhome">
+                          <option value="1" data-icon="/Rociodeluna/img/bcasa.jpg">Casa</option>
+                          <option value="2" data-icon="/Rociodeluna/img/bdpto1.jpg">Dpto Nº1</option>
+                          <option value="3" data-icon="/Rociodeluna/img/bdpto2.jpg">Dpto Nº2</option>
+                          <option value="4" data-icon="/Rociodeluna/img/bdpto3.jpg">Dpto Nº3</option>
+                          <option value="5" data-icon="/Rociodeluna/img/bdpto4.jpg">Dpto Nº4</option>
+                      </select>
+                      <label for="selhome">ESTABLECIMIENTO:</label>
+                  </div>
+             </div>
+
+          <div class="row">
+              <div class="input-field col s8">
+                <i class="fas fa-envelope-open prefix"></i>
+                <input id="email" type="email" class="validate">
+                <label for="email">EMAIL</label>
+                <span class="helper-text" data-error="Ingrese un Email válido" data-success="Correcto!"></span>
+              </div>
+              <div class="col s2">
+                  <div class="input-field">
+                       <i class="fas fa-calendar-alt prefix"></i>
+                      <input type="text" class="validate datepicker" id="checkin">
+                      <label for="checkin">Fecha de check-in</label>
+                  </div>
+              </div>
+                  <div class="col s2">
+                      <div class="input-field">
+                           <i class="fas fa-calendar-alt prefix"></i>
+                          <input type="text" class="validate datepicker" id="checkout">
+                          <label for="checkout">Fecha de check-out</label>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                       <i class="fas fa-user prefix"></i>
+                      <select id="seladult">
+                          <option value="1">1 Adulto</option>
+                          <option value="2">2 Adultos</option>
+                          <option value="3">3 Adultos</option>
+                          <option value="4">4 Adultos</option>
+                          <option value="5">5 Adultos</option>
+                          <option value="6">6 Adultos</option>
+                          <option value="7">7 Adultos</option>
+                          <option value="8">8 Adultos</option>
+                          <option value="9">9 Adultos</option>
+                          <option value="10">10 Adultos</option>
+                      </select>
+                      <label for="seladult">CANTIDAD DE HUÉSPEDES:</label>
+                  </div>
+                  <div class="input-field col s6">
+                       <i class="fas fa-child prefix"></i>
+                      <select id="selchild">
+                          <option value="1">Sin niños</option>
+                          <option value="2">1 Niños</option>
+                          <option value="3">2 Niños</option>
+                          <option value="4">3 Niños</option>
+                          <option value="5">4 Niños</option>
+                          <option value="6">5 Niños</option>
+                          <option value="7">6 Niños</option>
+                          <option value="8">7 Niños</option>
+                          <option value="9">8 Niños</option>
+                          <option value="10">9 Niños</option>
+                          <option value="11">10 Niños</option>
+                      </select>
+                      <label for="selchild">NIÑOS (Edad 0-6 años):</label>
+                    </div>
+              </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                  <i class="fas fa-pen prefix"></i>
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">COMENTARIOS</label>
+              </div>
+            </div>
+            <div class="container">
+                  <div class="row center col s12">
+                      <div class="col s3">
+                          <a class="waves-effect waves-light btn-large pink text-white" ><i class="fas fa-eraser right"></i>Borrar</a>
+                      </div>
+                      <div class="col s3">
+                          <a class="waves-effect waves-light btn-large pink text-white" type="submit" name="action"><i class="fas fa-check right"></i>Aceptar</a>
+                      </div>
+                  </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+   <footer class="page-footer blue darken-4">
+        <div id="contactoimg" class="container p-3 text-white text-center">
+            <div>
+              <label ><h5 id="siguenos" class="white-text"><b>SIGUENOS!!</b></h5></label>
+              <p class="grey-text text-lighten-4">Subscríbete en nuestras cuentas para consultar o recibir promociones que lanzamos a menudo.</p>
+            </div>
+
+            <div class="btnsocial">
+                <a class="btnsociala" href="https://www.facebook.com/Rocio-de-luna-851077651600722/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btnsociala" href="mailto:villarreal_cesar2001@yahoo.com.ar">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a class="btnsociala" href="https://api.whatsapp.com/send?phone=+543541379657&text=Deseo%20recibir%20informacion%20sobre%20Rocio%20de%20Luna">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="btnsociala" href="tel:+543541379657">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a class="btnsociala" href="https://www.booking.com/hotel/ar/rocio-de-luna.es.html" target="_blank">
+                    <i class="fas fa-bold"></i>
+                </a>
+                <a class="btnsociala" href="https://goo.gl/maps/dtj3qPaawFeoFM3HA" target="_blank">
+                    <i class="fas fa-map-marked-alt"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="text-center blue darken-2">
+            <p>&copy; 2020 Copyright Gabriel Villarreal </p>
+        </div>
+    </footer>
+
+     <!-- javascript bootstrap -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- script de swipe para hacer un slide de fotos -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 40,
+            stretch: 0,
+            depth: 150,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+          autoplay:{
+            delay:1000,
+            disableOnInteraction: false,
+          },
+        });
+    </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+
+    var swiper = new Swiper(' .swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 40,
+            stretch: 0,
+            depth: 150,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+          autoplay:{
+            delay:1000,
+            disableOnInteraction: false,
+          },
+        });
+  });
+
+
+</script>
+-->
+
+    <!-- Initialize Swiper -->
+
+<script>
+  //abre las ventanas modal
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+</script>
+
+  <script>
+    //script para los comentarios
+    var swiper = new Swiper('#swipecomentarios .swiper-container', {
+      loop:true,
+      autoplay:{
+          delay:2000,
+          disableOnInteraction: false,},
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',},
+    });
+  </script>
+
+  <!--deshabilito el intro
+  <script>
+    window.onload = function (){
+    var pos = 0;
+    var box = document.querySelector('.header');
+    var t = setInterval(move,10);
+
+
+    function move(){
+      if(pos >=840){
+        clearInterval(t);
+      }
+      else{
+        pos +=3;
+        window.scroll(0,pos);
+      }
+    }
+  };
+ </script>
+
+ -->
+</script>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            /*script para la barra de navegacion, para que aparezca y achique el logo*/
+          let menuArea = document.getElementById('menu-area');
+            if (window.pageYOffset > 700) {
+                menuArea.classList.add("cus-nav");
+            }else{
+                menuArea.classList.remove("cus-nav");
+            }
+        });
+     </script>
+
+    <script type="text/javascript">
+        /* script para el intro de la pagina*/
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+        let navegacion = document.getElementById("navegacion");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 0.5 + 'px';
+        });
+    </script>
+
+
+<script>
+  $(document).ready(function(){
+
+    setInterval(function(){
+      $('.carousel').carousel('next');
+    }, 1500);
+
+  })
+</script>
+
+<script>
+
+
+  $(document).ready(function(){
+    //form select
+
+    var sel = document.querySelectorAll('select');
+    var inst = M.FormSelect.init(sel);
+
+    //onSelect: function(){console.log(2)}
+    //minDate: new Date(2020,12,31),
+    var dateToday = new Date(); //tomo la fecha de hoy para que sea la fecha minima que pueda elegir para el check
+    var options = {
+                format: 'dd/mmmm/yyyy',
+                autoClose: true,
+                defaultDate: new Date(2021,0),
+                setDefaultDate: false,
+                minDate: dateToday,
+                yearRange: [2020,2023],
+                showDaysInNextAndPreviousMonths: true,
+
+
+            };
+
+    var cin = document.getElementById('checkin');
+    var cout = document.getElementById('checkout');
+    var instances = M.Datepicker.init(cin, options);
+    var instancesOut = M.Datepicker.init(cout, options);
+    var options2 = {
+                format: 'dd/mmmm/yyyy',
+                autoClose: true,
+                defaultDate: new Date(cin),
+                setDefaultDate: true,
+                minDate: cin.toString(),
+                yearRange: [2020,2023],
+                showDaysInNextAndPreviousMonths: true,
+
+            };
+});
+//ver de acondicionarlo
+/*var dateToday = new Date();
+var cin = document.getElementById("checkin");
+var cout = document.getElementById("checkout");
+var elems = document.querySelectorAll('.datepicker');
+var instances = M.Datepicker.init(elems, {
+    defaultDate: new Date(2021,0),
+    minDate: dateToday,
+    onSelect: function(selectedDate) {
+
+        console.log(instances[0].id);
+        if(instances[0]){
+            minDate: dateToday;
+        }else{
+            minDate: instances[0].date;
+        }
+            /*console.log(cout);
+            date = instances[0].date;
+          console.log(date);
+          minDate: instances[0].date;*/
+
+
+
+
+
+            //instance = $(this).data("datepicker"),
+           // date = $.datepicker.parseDate() e((instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+       // dates.not(this).datepicker("option", option, date);
+
+    /*);
+
+var dates = $("#from, #to").Datepicker.init({
+    defaultDate: new Date(2021,0),
+    minDate: dateToday,
+    onSelect: function(selectedDate) {
+        var option = this.id == "from" ? "minDate" : "maxDate",
+            instance = $(this).data("datepicker"),
+            date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+        dates.not(this).datepicker("option", option, date);
+    }
+*/
+
+
+
+</script>
+
+</body>
+</html>
